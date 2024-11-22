@@ -1,63 +1,3 @@
-html, body, .container{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: white;
-}
-
-a{
-    color: #fff;
-    text-decoration-line: none;
-}
-header{
-    width: 100%;
-    height: 10%;
-    background-color: rgb(250, 234, 192);
-}
-
-.main-banner{
-    width: 100%;
-    height: auto;
-    min-height: 80vh;
-    display: grid;
-    grid-template-areas: 
-    ". main-banner-container main-banner-img ."
-    ". main-banner-btn main-banner-img .";
-    grid-template-columns: 1fr 5fr 5fr 1fr;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    gap: 1%;
-    background-color: rgb(250, 234, 192);
-    align-content: center;
-}
-
-.main-banner-container{
-    grid-area: main-banner-container;
-    display: grid;
-    grid-template-areas: "main-banner-content-strong main-banner-content-strong main-banner-content-strong main-banner-content-strong"
-    "main-banner-content-p main-banner-content-p main-banner-content-p main-banner-content-p";
-    grid-template-rows: 1fr 6fr;
-}
-
-.main-banner-container strong{
-    grid-area: main-banner-content-strong;
-    font-size: 30px;
-}
-
-.main-banner-container p{
-    grid-area: main-banner-content-p;
-    font-size: 20px;
-}
-
-.main-banner > img{
-    width: 90%;
-    grid-area: main-banner-img;
-}
-
-.main-banner-btn{
-    grid-area: main-banner-btn;
-}
-
 .main-banner-btn button{
     float: right;
     border: none;
@@ -67,3 +7,70 @@ header{
     font-size: large;
 }
 
+@media (min-width: 700px) {
+    .main-banner{
+        width: 100%;
+        height: auto;
+        min-height: 80vh;
+        display: grid;
+        grid-template-areas: 
+        ". main-banner-container main-banner-img ."
+        ". main-banner-btn main-banner-img .";
+        grid-template-columns: 1fr 5fr 5fr 1fr;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        gap: 1%;
+        background-color: rgb(250, 234, 192);
+        align-content: center;
+    }
+
+    .main-banner-container{
+        grid-area: main-banner-container;
+        display: grid;
+        grid-template-areas: "main-banner-content-strong main-banner-content-strong main-banner-content-strong main-banner-content-strong"
+        "main-banner-content-p main-banner-content-p main-banner-content-p main-banner-content-p";
+        grid-template-rows: 1fr 6fr;
+    }
+
+    .main-banner-container strong{
+        grid-area: main-banner-content-strong;
+        font-size: 30px;
+    }
+
+    .main-banner-container p{
+        grid-area: main-banner-content-p;
+        font-size: 20px;
+    }
+
+    .main-banner > img{
+        width: 90%;
+        grid-area: main-banner-img;
+    }
+
+    .main-banner-btn{
+        grid-area: main-banner-btn;
+    }
+
+    
+}
+
+@media (max-width: 699px) {
+    .main-banner{
+        width: 100%;
+        height: auto;
+        min-height: 80vh;
+        display: block;
+        justify-items: center;
+        background-color: rgb(250, 234, 192);
+    }
+
+    .main-banner-container{
+        margin-top: 5%;
+        width: 80%;
+    }
+
+    .main-banner-btn button{
+        margin-top: 15%;
+    }
+    
+}

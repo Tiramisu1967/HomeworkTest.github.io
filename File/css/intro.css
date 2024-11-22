@@ -1,12 +1,15 @@
 
 .intro{
-    height: auto;
+    width: 90%;
+    margin: auto;
+    height: calc(auto + 10%);
     background-color: white;
     display: grid;
     grid-template-areas: ". intro-strong intro-strong intro-strong"
-    ". intro-p intro-img intro-img";
-    grid-template-columns: 1fr 6fr 2fr 2fr;
+    ". intro-p intro-img .";
+    grid-template-columns: 1fr 6fr 5fr 1fr;
     grid-template-rows: auto auto;
+    box-shadow: 15px 15px 15px black;
 }
 
 .intro-strong{
@@ -24,4 +27,21 @@
 .intro-img{
     grid-area: intro-img;
     width: 100%;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 700px) {
+    .intro{
+        grid-template-areas: '. intro-strong intro-strong .'
+        '. intro-img intro-img .'
+        '. intro-p intro-p .';
+    }
+    .intro-strong{
+        text-align: center;
+        font-size: 25px;
+    }
+    .intro-p{
+        font-size: 15px;
+    }
 }
