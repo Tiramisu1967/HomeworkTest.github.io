@@ -1,0 +1,83 @@
+
+.Section{
+    margin-top: 5%;
+    height: 60vh;
+    display: grid;
+    grid-template-areas: 
+    ". Section-container Section-icon Section-icon"
+    "Section-img Section-img Section-img Section-img";
+    grid-template-columns: 1fr 7fr 7fr 1fr;
+    grid-template-rows:  30% 70%;
+    overflow: hidden;
+}
+
+
+.Section-container{
+    grid-area: Section-container;
+    font-size: 13px;
+}
+
+.Section-container strong{
+    font-size: 30px;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.Section-icon{
+    grid-area: Section-icon;
+    display: flex;
+    justify-content: center;
+}
+
+.Section-icon > div{
+    height: 90%;
+    width: 30%;
+    font-size: 0.5em;
+    display: grid;
+    grid-template-areas: 
+        'icon-img icon-img icon-img'
+        'icon-text icon-text icon-text';
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+.Section-icon >div > .icon-img{
+    grid-area: icon-img;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.Section-icon >div > .icon-img >img{
+    height: 100%;
+}
+.Section-icon >div >.icon-text{
+    grid-area: icon-text;
+}
+.Section-icon >div >.icon-text> strong{
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    @media (max-width: 900px) {
+        font-size: 0.8rem;
+    }
+}
+
+.Section-icon >div > .icon-text > p{
+    margin: auto;
+    width: 60%;
+    @media (max-width: 900px) {
+        font-size: 0.6rem;
+        width: 90%;
+    }
+}
+
+.Section-img{
+    grid-area: Section-img;
+    display: flex;
+}
+
+.Section-img > img{
+    height: 90%;
+    margin: auto;
+    border-radius: 15px;
+}

@@ -1,0 +1,27 @@
+
+.intro{
+    height: auto;
+    background-color: white;
+    display: grid;
+    grid-template-areas: ". intro-strong intro-strong intro-strong"
+    ". intro-p intro-img intro-img";
+    grid-template-columns: 1fr 6fr 2fr 2fr;
+    grid-template-rows: auto auto;
+}
+
+.intro-strong{
+    grid-area: intro-strong;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.intro-p{
+    grid-area: intro-p;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.intro-img{
+    grid-area: intro-img;
+    width: 100%;
+}
