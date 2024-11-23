@@ -1,4 +1,8 @@
-@media (min-width: 901px) {
+.Section >div{
+    font-family: 'KyoboHandwriting2023wsa';
+}
+
+@media (min-width: 1201px) {
     .Section{
         width: 100%;
         margin-top: 5%;
@@ -10,16 +14,17 @@
         grid-template-columns: 1fr 7fr 7fr 1fr;
         grid-template-rows:  30% 70%;
         overflow: hidden;
+        font-family: 'Unilab';
     }
 
 
     .Section-container{
         grid-area: Section-container;
-        font-size: 13px;
+        font-size: 40px;
     }
 
     .Section-container strong{
-        font-size: 30px;
+        font-size: 60px;
         white-space: normal;
         overflow-wrap: break-word;
     }
@@ -33,7 +38,7 @@
     .Section-icon > div{
         height: 90%;
         width: 30%;
-        font-size: 0.5em;
+        font-size: 20px;
         display: grid;
         grid-template-areas: 
             'icon-img icon-img icon-img'
@@ -55,12 +60,13 @@
     }
     .Section-icon >div >.icon-text> strong{
         display: block;
-        font-size: 1rem;
+        font-size: 2rem;
         text-align: center;
         width: 100%;
     }
 
     .Section-icon >div > .icon-text > p{
+        font-size: 1.3  rem;
         margin: auto;
         width: 60%;
     }
@@ -77,7 +83,7 @@
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:1200px) {
     .Section{
         width: 100vw;
         display: grid;
@@ -99,6 +105,7 @@
     .Section-container > div{
         display: flex;
         flex-direction: column;
+        font-size: 30px;
         width: 95%;
         margin: auto;
         height: 100%;
@@ -117,7 +124,7 @@
     .Section-icon > div{
         height: 90%;
         width: 30%;
-        font-size: 0.5em;
+        font-size: 20px;
         display: grid;
         grid-template-areas: 
             'icon-img icon-img icon-img'
@@ -140,12 +147,13 @@
     }
     .Section-icon >div >.icon-text> strong{
         display: block;
-        font-size: 1rem;
+        font-size: 2rem;
         text-align: center;
         width: 100%;
     }
 
     .Section-icon >div > .icon-text > p{
+        font-size: 1.2rem;
         margin: auto;
         width: 95%;
     }

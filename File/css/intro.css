@@ -10,18 +10,22 @@
     grid-template-columns: 1fr 6fr 5fr 1fr;
     grid-template-rows: auto auto;
     box-shadow: 15px 15px 15px black;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .intro-strong{
     grid-area: intro-strong;
     font-size: 40px;
     padding: 15px;
+    font-family: 'Ownglyph_meetme-Rg';
 }
 
 .intro-p{
     grid-area: intro-p;
-    font-size: 25px;
+    font-size: 35px;
     padding: 15px;
+    font-family: 'KyoboHandwriting2023wsa';
 }
 
 .intro-img{
