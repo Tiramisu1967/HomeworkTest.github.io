@@ -101,7 +101,10 @@ header > .login > a:hover::after {
     }
     
     header > .login{
+        float: left;
         width: 20%;
         font-size: 15px;
     }
+
+
 }
