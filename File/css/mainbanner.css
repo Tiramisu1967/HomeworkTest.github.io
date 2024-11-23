@@ -1,10 +1,12 @@
-.main-banner-btn button{
+.main-banner-btn a{
     float: right;
     border: none;
     background-color: rgb(106, 171, 255);
     padding: 15px;
     border-radius: 15px;
     font-size: large;
+    color: black;
+    text-decoration-line: none;
 }
 
 .main-banner{

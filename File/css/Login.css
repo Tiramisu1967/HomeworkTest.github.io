@@ -69,10 +69,10 @@ main > .InputBox{
     left: 3%;
     padding: 15px;
     background-color: rgb(221, 163, 255);
+    box-shadow: inset -5px -5px 5px rgb(172, 127, 199);
     border-radius: 15px;
     color: black;
     text-decoration-line: none;
-    box-shadow: inset -5px -5px 5px rgb(172, 127, 199);
     font-size: 20px;
 }
 

@@ -1,0 +1,116 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: slateblue;
+}
+
+header > .title{
+    float: left;
+    width: 10vw;
+    height: 100%;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'BagelFatOne-Regular';
+}
+
+header > .title > p{
+    width: 100%;
+    text-align: center;
+}
+
+header > .navi{
+    float: right;
+    height: 100%;
+    width: 20vw;
+    margin-right: 2%;
+    padding: 0;
+    z-index: 100;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+
+.menu li{
+    text-align: center;
+    margin-top: 47px;
+    font-family: 'BagelFatOne-Regular';
+}
+
+.menu li>a{
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 30px;
+    border: 1px solid black;
+    color: black;
+    text-decoration-line: none;
+    background-color: rgb(221, 163, 255);
+    box-shadow: inset -5px -5px 5px rgb(172, 127, 199);
+}
+
+.menu li:hover>a{
+    transition: 0.5s;
+    background-color: rgb(172, 127, 199);
+    box-shadow: inset 5px 5px 5px rgb(108, 80, 124);
+}
+
+.sub{
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #000;
+    padding-top: 10px;
+    display: none;
+}
+
+.sub button{
+    display : block;
+    font-family: 'BagelFatOne-Regular';
+    width: 90%;
+    margin: auto;
+    height: 5vh;
+    margin-bottom: 10px;
+    padding : 5px ;
+    transition : 0.5s ;
+    background-color: rgb(221, 163, 255);
+    box-shadow: inset -5px -5px 5px rgb(172, 127, 199);
+    font-size: 25px;
+}
+.sub button:hover {
+    background-color: rgb(172, 127, 199);
+    box-shadow: inset 5px 5px 5px rgb(108, 80, 124);
+    font-size: 15px;
+}
+
+.menu li:first-child .sub{
+    border-left: 1px solid #000;
+}
+
+.menu li:last-child .sub{
+    border-right: 1px solid #000;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+    margin-top: 2%;
+}
+
+.container > #AddBox{
+    border: 1px solid black;
+    padding: 15px;
+    width: 80vw;
+    height: auto;
+    min-height: 100px;
+    background-color: #ffffff;
+    margin: auto;
+}
