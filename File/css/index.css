@@ -17,6 +17,7 @@ header{
     border-bottom: 1px solid black;
 }
 
+
 header > .logo{
     width: 10%;
     height: 100%;
@@ -78,3 +79,29 @@ header > .login > a:hover::after {
     opacity: 1;
 }
 
+@media (max-width: 800px) {
+    header{
+        border: 1px solid red;
+    }
+    header > .Title{
+        min-width: 250px;
+        font-size: 40px;
+    }
+    
+    header > .login{
+        width: 20%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header > .Title{
+        min-width: 250px;
+        font-size: 30px;
+    }
+    
+    header > .login{
+        width: 20%;
+        font-size: 15px;
+    }
+}
