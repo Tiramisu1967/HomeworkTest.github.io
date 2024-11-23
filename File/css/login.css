@@ -28,37 +28,10 @@ html, body{
     width: 100vw;
 }
 
-.boxes{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    grid-area: boxes;
-    display: grid;
-    background-color: rgb(255, 152, 149);
-    border-radius: 25px;
-    padding: 25px;
-    grid-template-areas: 
-    '. . .'
-    '. box .'
-    '. . .  '
-    'main main main';
-    box-shadow: inset -10px -10px 10px rgb(196, 140, 140);
-    grid-template-rows: 10% 40% 10% 40%;
-}
-
 .box{
     grid-area: box;
-        display: flex;
+    display: flex;
     justify-content: center;
-}
-
-.box > img{
-    height: 100%;
-    border-radius: 15px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 15px rgb(148, 99, 194);
 }
 
 main{
@@ -79,7 +52,7 @@ main > .InputBox{
 
 .InputBox > button{
     position: absolute;
-
+    
     bottom: 5%;
     right: 5%;
     padding: 15px;
@@ -101,4 +74,65 @@ main > .InputBox{
     text-decoration-line: none;
     box-shadow: inset -5px -5px 5px rgb(172, 127, 199);
     font-size: 20px;
+}
+
+.InputBox > a:hover, .InputBox > button:hover{
+    background-color: rgb(172, 127, 199);
+    box-shadow: inset 5px 5px 5px rgb(108, 80, 124);
+    transition: 0.5s;
+}
+
+@media (min-width: 1000px) {
+    .boxes{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        grid-area: boxes;
+        display: grid;
+        background-color: rgb(255, 152, 149);
+        border-radius: 25px;
+        padding: 25px;
+        grid-template-areas: 
+        '. . .'
+        '. box .'
+        '. . .  '
+        'main main main';
+        box-shadow: inset -10px -10px 10px rgb(196, 140, 140);
+        grid-template-rows: 10% 40% 10% 40%;
+    }
+    
+    
+    .box > img{
+        height: 100%;
+        border-radius: 15px;
+        border: 2px solid black;
+        box-shadow: 5px 5px 15px rgb(148, 99, 194);
+    }
+    
+    
+}
+
+@media (max-width: 1000px) {
+    .boxes{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        box-shadow: inset 10px -10px 10px rgb(196, 140, 140);
+        background-color: rgb(255, 152, 149);
+        display: grid;
+        grid-template-areas: 
+        '. . .'
+        '. box .'
+        'main main main'
+        '. . .';
+    }
+
+    .box > img{
+        height: 50%;
+        border-radius: 15px;
+        border: 2px solid black;
+        box-shadow: 5px 5px 15px rgb(148, 99, 194);
+    }
 }

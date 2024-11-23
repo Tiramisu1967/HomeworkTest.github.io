@@ -2,7 +2,7 @@
     font-family: 'KyoboHandwriting2023wsa';
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1401px) {
     .Section{
         width: 100%;
         margin-top: 5%;
@@ -20,11 +20,11 @@
 
     .Section-container{
         grid-area: Section-container;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .Section-container strong{
-        font-size: 60px;
+        font-size: 40px;
         white-space: normal;
         overflow-wrap: break-word;
     }
@@ -83,7 +83,7 @@
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:1400px) {
     .Section{
         width: 100vw;
         display: grid;
