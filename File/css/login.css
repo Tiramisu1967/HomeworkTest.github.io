@@ -1,0 +1,104 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.background{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.container{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.boxes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    grid-area: boxes;
+    display: grid;
+    background-color: rgb(255, 152, 149);
+    border-radius: 25px;
+    padding: 25px;
+    grid-template-areas: 
+    '. . .'
+    '. box .'
+    '. . .  '
+    'main main main';
+    box-shadow: inset -10px -10px 10px rgb(196, 140, 140);
+    grid-template-rows: 10% 40% 10% 40%;
+}
+
+.box{
+    grid-area: box;
+        display: flex;
+    justify-content: center;
+}
+
+.box > img{
+    height: 100%;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px rgb(148, 99, 194);
+}
+
+main{
+    grid-area: main;
+}
+
+main > .InputBox{
+    height: 100%;
+    width: 100%;
+}
+
+.InputBox > input{
+    width: 95%;
+    height: 50px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.InputBox > button{
+    position: absolute;
+
+    bottom: 5%;
+    right: 5%;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(221, 163, 255);
+    box-shadow: inset -5px -5px 5px  rgb(179, 132, 206);
+    border-radius: 15px;
+}
+
+.InputBox > a{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    padding: 15px;
+    background-color: rgb(221, 163, 255);
+    border-radius: 15px;
+    color: black;
+    text-decoration-line: none;
+    box-shadow: inset -5px -5px 5px rgb(172, 127, 199);
+    font-size: 20px;
+}
