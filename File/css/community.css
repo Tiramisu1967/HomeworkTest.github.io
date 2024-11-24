@@ -24,10 +24,12 @@ header{
 
 .box {
     margin-top: 5%;
-    height: 250px;
+    height: 300px;
     padding: 10px;
     gap: 10px;
 }
+
+
 
 .box::-webkit-scrollbar{
     display: none;
@@ -44,16 +46,22 @@ header{
     font-size: 30px;
 }
 
-.box > div {
+.box > .divs:not(#my){
+    width: 100%;
+    overflow: auto;
+}
+
+.box > .divs > div {
     display: flex;
     white-space: nowrap;
     padding-left: 8%;
     width: 200vw;
-    height: 100px;
+    height: 200px;
+    overflow: auto;
     flex-shrink: 0;
 }
 
-.box > div > button, .box > div > a{
+.box > .divs > div > button, .box > .divs > div > a{
     float: left;
     margin-left: 1%;
     width: 150px;
@@ -63,21 +71,69 @@ header{
     border: 4px solid black;
 }
 
-.box > div > button:hover, .box > div > a:hover{
+.box > .divs > div > button:hover, .box > .divs > div > a:hover{
     transform: scale(1.2);
     box-shadow: 0px 0px 15px rgb(255, 43, 43);
     transition: 0.5s;
 }
 
-.box > div > a{
+.box > .divs > div > a{
     background-color: whitesmoke;
 }
 
-.box > div > a::after{
+.box > .divs > div > a::after{
     position: relative;
     content: '+';
     top: 25%;
     left: 40%;
     transform: translate(0%, -50%);
     font-size: 50px;
+}
+
+.Title > strong > a{
+    font-size: 20px;
+}
+
+header > .Com-Title{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    min-width: 250px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-family: 'KyoboHandwriting2023wsa';
+}
+
+@media (max-width: 700px) {
+    .Com-Title > strong > a{
+        font-size: 20px;
+    }
+
+    header > .Com-Title{
+        display: flex;
+        height: 100%;
+        width: 10%;
+        min-width: 250px;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        font-family: 'KyoboHandwriting2023wsa';
+    }
+
+    .box > .divs > div > button, .box > .divs > div > a{
+        float: left;
+        margin-left: 1%;
+        width: 100px;
+        height: 100px;
+        border: none;
+        border-radius: 20%;
+        border: 4px solid black;
+    }
+
+    .box > .divs > div {
+        height: 150px;
+    }
+    
 }

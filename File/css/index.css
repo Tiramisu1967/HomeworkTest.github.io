@@ -6,6 +6,10 @@ html, body, .container{
     background-color: rgb(250, 234, 192);
 }
 
+html::-webkit-scrollbar{
+    display: none;
+}
+
 a{
     color: black;
     text-decoration-line: none;
@@ -79,7 +83,7 @@ header > .login > a:hover::after {
     opacity: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     header{
         width: 100vw;
     }
@@ -90,20 +94,23 @@ header > .login > a:hover::after {
     
     header > .login{
         width: 20%;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 600px) {
     header > .Title{
-        min-width: 250px;
+        max-width: 250px;
         font-size: 20px;
     }
     
     header > .login{
-        float: left;
+        float: right;
+        width: 10%;
+        font-size: 13px;
+    }
+    header > .login:last-child{
         width: 20%;
-        font-size: 15px;
     }
 }
 

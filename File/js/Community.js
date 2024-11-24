@@ -17,7 +17,7 @@ function PostRandom(Num, min){
 }
 
 function AddPost(post){
-    var Random = PostRandom(5, 3);
+    var Random = PostRandom(8, 5);
     var fixed = 0;
     for(var i = 0; Random > i; i++){
         const NewBox = document.createElement('button');
