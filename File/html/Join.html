@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/join.css">
+    <title>join</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="boxes">
+            <main>
+                <div class="box" id="Login">
+                    <img src="../img/logo.png" id="MainImage"alt="logo">
+                </div>
+                <form class="InputBox">
+                    <input type="text" id="username" required placeholder="your ID!">
+                    <input type="text" id="userid" placeholder="your Name!">
+                    <input type="password" id="userpw" placeholder="your password!" required>
+                    <input type="password" id="recheckpw" placeholder="Recheck password!" required>
+                    <input type="email" id="useremail" placeholder="your email!" required>
+                    <button class="btn" onclick="alert(event)" type="submit">Complete</button>
+                    <a href="Login.html">back</a>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/join.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

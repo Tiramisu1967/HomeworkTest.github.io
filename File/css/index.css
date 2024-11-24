@@ -106,3 +106,13 @@ header > .login > a:hover::after {
         font-size: 15px;
     }
 }
+
+footer{
+    margin-top: 10%;
+    border-top: 1px solid black;
+    height: 10vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

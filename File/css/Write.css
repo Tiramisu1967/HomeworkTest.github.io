@@ -2,116 +2,53 @@ html, body{
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: beige;
+    font-size: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 header{
-    width: 100vw;
-    height: 100px;
-    background-color: slateblue;
-}
-
-header > .title{
-    float: left;
-    width: 10vw;
+    width: 450px;
     height: 100%;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'BagelFatOne-Regular';
+    background-color: #F7F7F5;
 }
 
-header > .title > p{
-    width: 100%;
+header > .Userid{
+    font-size: 30px;
+    display: block;
     text-align: center;
 }
 
 header > .navi{
-    float: right;
-    height: 100%;
-    width: 20vw;
-    margin-right: 2%;
-    padding: 0;
-    position: relative;
-    z-index: 99999999999999999;
+    width: 100%;
+    height: 25%;
+    margin-top: 5%;
 }
-.menu{
-    margin: 0;
-    padding: 0;
+
+header > .navi > .menu{
     list-style: none;
-    height: 100%;
+    font-size: 1.3rem;
+    padding-left: 15px;
+    padding-top: 3%;
 }
 
-.menu li{
-    text-align: center;
-    margin-top: 47px;
-    font-family: 'BagelFatOne-Regular';
+header > .navi > .menu > li{
+    padding: 5px;
 }
 
-.menu li>a{
-    height: 50px;
-    line-height: 50px;
+header a{
     display: block;
-    font-size: 30px;
-    border: 1px solid black;
     color: black;
     text-decoration-line: none;
-    background-color: rgb(221, 163, 255);
-    box-shadow: inset -5px -5px 5px rgb(172, 127, 199);
+    border-radius: 15px;
+    padding: 8px;
+    padding-left: 20px;
 }
 
-.menu li:hover>a{
+header a:hover{
+    background-color: #c9c9c9;
     transition: 0.5s;
-    background-color: rgb(172, 127, 199);
-    box-shadow: inset 5px 5px 5px rgb(108, 80, 124);
-}
-
-.sub{
-    background-color: #fff;
-    color: #333;
-    border-bottom: 1px solid #000;
-    padding-top: 10px;
-    display: none;
-}
-
-.sub button{
-    display : block;
-    font-family: 'BagelFatOne-Regular';
-    width: 90%;
-    margin: auto;
-    height: 5vh;
-    margin-bottom: 10px;
-    padding : 5px ;
-    transition : 0.5s ;
-    background-color: rgb(221, 163, 255);
-    box-shadow: inset -5px -5px 5px rgb(172, 127, 199);
-    font-size: 25px;
-}
-.sub button:hover {
-    background-color: rgb(172, 127, 199);
-    box-shadow: inset 5px 5px 5px rgb(108, 80, 124);
-    font-size: 15px;
-}
-
-.menu li:first-child .sub{
-    border-left: 1px solid #000;
-}
-
-.menu li:last-child .sub{
-    border-right: 1px solid #000;
-}
-
-.container{
-    width: 100vw;
-    height: auto;
-    margin-top: 2%;
-}
-
-.container > #AddBox{
-    border: 1px solid black;
-    padding: 15px;
-    width: 80vw;
-    height: auto;
-    min-height: 100px;
-    background-color: #ffffff;
-    margin: auto;
 }

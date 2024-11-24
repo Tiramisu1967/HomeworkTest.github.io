@@ -33,9 +33,7 @@ function AddBox(tagtype) {
                     reader.readAsDataURL(file); 
                 }
             });
-    
-            // 파일 업로드 필드 추가
-            input.click(); // 업로드 창 열기
+            input.click(); 
         }
         else
         {
