@@ -22,11 +22,11 @@
 
     .Section-container{
         grid-area: Section-container;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .Section-container strong{
-        font-size: 40px;
+        font-size: 30px;
         white-space: normal;
         overflow-wrap: break-word;
     }
@@ -40,7 +40,7 @@
     .Section-icon > div{
         height: 90%;
         width: 30%;
-        font-size: 20px;
+        font-size: 15px;
         display: grid;
         grid-template-areas: 
             'icon-img icon-img icon-img'
@@ -62,7 +62,7 @@
     }
     .Section-icon >div >.icon-text> strong{
         display: block;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         width: 100%;
     }
