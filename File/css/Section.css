@@ -13,7 +13,7 @@
         ". . . ."
         "Section-img Section-img Section-img Section-img";
         grid-template-columns: 1fr 7fr 7fr 1fr;
-        grid-template-rows:  30% 20% 60%;
+        grid-template-rows:  30% 10% 70%;
         overflow: hidden;
         font-family: 'Unilab';
         padding-bottom: 10%;
@@ -74,6 +74,7 @@
     }
 
     .Section-img{
+        width: 100%;
         grid-area: Section-img;
         display: flex;
     }
@@ -91,7 +92,7 @@
         display: grid;
         margin-top: 5%;
         height: auto;
-
+        margin-bottom: 50%;
         /* 모양 조절 */
         grid-template-areas: 
         'Section-container Section-container Section-container'
@@ -164,10 +165,13 @@
         grid-area: Section-img;
         display: flex;
         height: 100%;      
-        width: 100vw;
+        width: 90vw;
+        margin: auto;
+        overflow: hidden;
     }
     .Section-img > img{
         height: 80%;
+        width: 90%;
         border-radius: 15px;
         margin: auto;
     }

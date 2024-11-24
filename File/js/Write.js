@@ -1,45 +1,45 @@
-function AddBox(tagtype) {
-    const tagbox = document.getElementById('AddBox');
-    if(tagtype === 'flie'){
-        const newtag = document.createElement('input');
-        newtag.type = 'file';
-        tagbox.appendChild(newtag);
-    }
-    else{
-        const newtag = document.createElement(tagtype);
-        if(tagtype === 'a'){
-            newtag.href = prompt('Enter a URL:', newtag.href);
-            newtag.textContent = prompt('Enter a text:');
-            
-            newtag.contentEditable = false;
-            tagbox.appendChild(newtag);
+const notion = document.getElementById('AddBox');
+
+function AddBox(tag){
+    const br = document.createElement('br')
+    if(tag === 'Title'){
+        const NewBox = document.createElement('strong')
+        NewBox.style.fontSize = '25px'
+        NewBox.contenteditable = true
+        NewBox.textContent = 'Title1';
+
+        notion.appendChild(NewBox);
+        notion.appendChild(br)
+    } else {
+        const NewBox = document.createElement(tag)
+        if(tag === 'a'){
+            NewBox.href = prompt('Link :');
+            NewBox.textContent = NewBox.href;
+            NewBox.contenteditable = false
+        } else{
+            NewBox.textContent = 'New Text';
+            NewBox.contenteditable = true
         }
-        else if(tagtype === 'img'){
-            const input = document.createElement('input');
-            input.type = 'file';
-            input.accept = 'image/*';
-            input.addEventListener('change', (e) => {
-                const file = e.target.files[0]; 
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = (event) => {
-                        const img = document.createElement('img');
-                        img.src = event.target.result; 
-                        img.style.maxWidth = '100%'; 
-                        img.alt = 'Uploaded Image';
-    
-                        tagbox.appendChild(img);
-                    };
-                    reader.readAsDataURL(file); 
-                }
-            });
-            input.click(); 
-        }
-        else
-        {
-            newtag.contentEditable = true;
-            newtag.textContent = `New ${tagtype}`;
-            tagbox.appendChild(newtag);
-        }    
+
+        notion.appendChild(NewBox)
+        notion.appendChild(br)
     }
+}
+
+function Save(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: '저장이 되지 않습니다.',
+        heightAuto: false,
+    });
+}
+
+function Post(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: '업로드 되지 않습니다.',
+        heightAuto: false, 
+    });
 }

@@ -47,7 +47,7 @@ header{
 .box > div {
     display: flex;
     white-space: nowrap;
-    padding-left: 15%;
+    padding-left: 8%;
     width: 200vw;
     height: 200px;
     flex-shrink: 0;

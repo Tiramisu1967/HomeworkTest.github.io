@@ -25,12 +25,32 @@
                 </li>
             </ul>
         </div>
+        <div class="content">
+            <button onclick="AddBox('Title')"class="Add-box">Title</button>
+            <button onclick="AddBox('a')" class="Add-box">Link</button>
+            <button onclick="AddBox('p')" class="Add-box">Text</button>
+            <div class="content">
+                <button onclick="Post()">Upload</button>
+                <button onclick="Save()">Save</button>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <aside></aside>
+    <div class="right">
+        <aside> 
+            <script> 
+                const date = new Date().toLocaleDateString();
+                document.write(date); 
+            </script>
+        </aside>
+        <div class="container">
+        <div class="banner"></div>
         <main>
-            <div id="AddBox"></div>
+            <div id="AddBox" contenteditable="true"></div>
         </main>
     </div>
+    </div>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/Write.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
