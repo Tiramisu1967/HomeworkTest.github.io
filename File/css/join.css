@@ -43,12 +43,6 @@ main > .InputBox{
     width: 100%;
 }
 
-.InputBox > input{
-    width: 95%;
-    height: 50px;
-    margin: 15px;
-    font-size: 20px;
-}
 
 .InputBox > button{
     position: absolute;
@@ -114,4 +108,39 @@ main > .InputBox{
         border: 2px solid black;
         box-shadow: 5px 5px 15px rgb(148, 99, 194);
     }
+
+    .InputBox > input{
+        width: 95%;
+        height: 50px;
+        margin: 15px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 999px){
+    .boxes{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 152, 149);
+        box-shadow: inset -10px -10px 10px rgb(196, 140, 140);
+        grid-template-rows: 10% 40% 10% 40%;
+    }
+    .box > img{
+        max-height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .InputBox{
+        width: 80%;
+    }
+
+    .InputBox > input{
+        width: 80%;
+        height: 50px;
+        margin-top: 3%;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    
 }
