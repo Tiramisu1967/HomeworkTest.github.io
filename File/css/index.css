@@ -48,7 +48,7 @@ header > .Title{
 header > .login{
     float: right;
     height: 100%;
-    width: 5%;
+    width: 10%;
     display: flex;
     align-items: center;
     font-size: 20px;

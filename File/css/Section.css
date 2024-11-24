@@ -10,11 +10,13 @@
         display: grid;
         grid-template-areas: 
         ". Section-container Section-icon Section-icon"
+        ". . . ."
         "Section-img Section-img Section-img Section-img";
         grid-template-columns: 1fr 7fr 7fr 1fr;
-        grid-template-rows:  30% 70%;
+        grid-template-rows:  30% 20% 60%;
         overflow: hidden;
         font-family: 'Unilab';
+        padding-bottom: 10%;
     }
 
 
